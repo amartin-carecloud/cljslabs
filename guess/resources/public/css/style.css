@@ -1,2 +1,37 @@
 /* some style */
+/* #fae596; */ 
+body { font-family: Menlo; background: #dddfd4;  }
+#app { width: 950px;
+       padding: 20px;
+       margin: 30px auto;
+       background: #fff;
+       border-top: 0;
+       border-left: 0;
+       box-shadow: 10px 10px 15px 5px #173e43;
+     }
+main { text-align: center; }
+hgroup { text-align: center; }
+h1, h2 { color: #173e43; }
+h2 { font-size: 0.8rem; }
 
+.guess {display: block; margin: 20px auto; width: 400px; text-align: center; }
+#guess {font-size: 1.5em;
+        text-align: center;
+        color: #173e43 font-weight: bold;
+        display: block;
+        width: 200px;
+        margin: 10px auto;}
+.guess button, #new-game {
+  background: #3fb0ac;
+  color: #173e43;
+  border: 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 4px 20px 8px 20px;
+  width: 120px;
+  display: block;
+  margin: 0 auto;}
+#new-game {
+  background: #fae596;
+  width: 200px;
+}
