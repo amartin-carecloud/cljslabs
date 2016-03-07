@@ -46,6 +46,10 @@ h1, h2, h3, h4, h5 {
   height:400px;
 }
 
+#candidateContainer .podium .name {
+  font-size:16px
+}
+
 .message-container {
   margin-top:20px;
   height:120px;
@@ -58,6 +62,7 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   border: double white 5px;
 }
+
 .score-container .label,
 .score-container .score {
   margin:0;
@@ -80,7 +85,7 @@ h1, h2, h3, h4, h5 {
 blockquote:before {
 display: block;
 content: "\201C";
-font-size: 2em;
+font-size: 3em;
 position: absolute;
 left: 10px;
 top:-10px;
@@ -90,7 +95,7 @@ color: #7a7a7a;
 blockquote:after {
 display: block;
 content: "\201D";
-font-size: 2em;
+font-size: 3em;
 position: absolute;
 right: 30px;
 top:-10px;
@@ -98,7 +103,7 @@ color: #7a7a7a;
 }
 
 .quote-container blockquote {
-  font-size: 2em;
+  font-size: 1.25em;
   font-style: italic;
   font-family: Helvetica;
   padding: 0.25em 40px;
@@ -116,3 +121,21 @@ color: #7a7a7a;
   color: #920005;
   font-style:italic;
 }
+
+button.liar-button,
+button.liar-button:focus{
+  background:none;
+  border:2px solid white;
+  color:white;
+}
+
+button.liar-button:hover,
+button.liar-button:active,
+button.active.liar-button,
+button.active:active
+{
+  background:none;
+  border:2px solid  #920005;
+  color: #920005;
+}
+
