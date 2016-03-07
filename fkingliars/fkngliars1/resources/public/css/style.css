@@ -1,0 +1,118 @@
+/* some style */
+
+body {
+  background-color: #000141;
+  
+  font-family: "League-Gothic", Courier;
+  background: -moz-radial-gradient(center, ellipse cover, #2657c9 0%, #000141 100%); /* ff3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #2657c9), color-stop(100%, #000141)); /* safari4+,chrome */
+  background: -webkit-radial-gradient(center, ellipse cover, #2657c9 0%, #000141 100%); /* safari5.1+,chrome10+ */
+  background: -o-radial-gradient(center, ellipse cover, #2657c9 0%, #000141 100%); /* opera 11.10+ */
+  background: -ms-radial-gradient(center, ellipse cover, #2657c9 0%, #000141 100%); /* ie10+ */
+  background: radial-gradient(ellipse at center, #2657c9 0%, #000141 100%); /* w3c */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2657c9', endColorstr='#000141',GradientType=1 ); /* ie6-9 */
+}
+
+h1, h2, h3, h4, h5 {
+  color:white;
+}
+
+#gameTitle {
+    text-align: center;
+    margin: 20px auto;
+    font-family: "League-Gothic", Courier;
+    font-size: 100px;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 4px 4px 0 #920005,
+    8px 8px 0 #72A1EF,
+    12px 12px 0 #920005,
+    16px 16px 0 #72A1EF;
+}
+
+#candidateContainer {
+  margin: 80px auto;
+  padding: 20px;
+  -webkit-display: -webkit-box;
+  -webkit-display: -webkit-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  min-height:500px;
+}
+
+#candidateContainer .podium {
+  height:400px;
+}
+
+.message-container {
+  margin-top:20px;
+  height:120px;
+}
+
+.score-container {
+  background: #920005;
+  padding: 5px;
+  height: 120px;
+  text-align: center;
+  border: double white 5px;
+}
+.score-container .label,
+.score-container .score {
+  margin:0;
+  padding:0;
+}
+
+.score-container .label {
+  font-size:1.5em;
+}
+.score-container .score {
+  font-size:4em;
+}
+
+.quote-container {
+  background:white;
+  height:120px;
+  text-align:center;
+}
+
+blockquote:before {
+display: block;
+content: "\201C";
+font-size: 2em;
+position: absolute;
+left: 10px;
+top:-10px;
+color: #7a7a7a;
+}
+
+blockquote:after {
+display: block;
+content: "\201D";
+font-size: 2em;
+position: absolute;
+right: 30px;
+top:-10px;
+color: #7a7a7a;
+}
+
+.quote-container blockquote {
+  font-size: 2em;
+  font-style: italic;
+  font-family: Helvetica;
+  padding: 0.25em 40px;
+  line-height: 1.45;
+  position: relative;
+  color: #383838;
+}
+
+.quote-container p {
+  font-size:2em;
+}
+
+.quote-container .game-over,
+.quote-container .assesment{
+  color: #920005;
+  font-style:italic;
+}
