@@ -13,11 +13,15 @@ This is the first in a series of ClojureScript exercises. The goal of this exerc
 
 Use [CLJSJS](http://cljsjs.github.io/) to add our javascript dependencies to our project.clj file.
 
-### 2. Require jQuery in Core component
+### 2. Require jQuery in Core
+
+_Working File: src/houseofliars/core.cljs_
 
 In order for us to reference the almighty jQuery bling ($) within our application we must require it in our project. Think RequireJS. Use this [ClJSJS documentation](https://github.com/cljsjs/packages/wiki/Using-Packages) as a guide.
 
 ### 3. Add the animated css file from a CDN to the index.html file.
+
+_Working File: resources/public/index.html_
 
 It's common to reqiure more than one stylesheet for our applications. Adding another stylesheet, aside from the default ```/css/style.css``` that is automatically generated for you, is fairly straight forward.
 
