@@ -68,6 +68,7 @@ Atoms can hold any value, but for the purpose of our application Atom's are muta
 ```
 ;; Here we created an atom that points to an empty map.
 (def app-state (atom {}))
+(def app-state (atom {:foo ""}))
 
 ;; Now we can populate (mutate) our Atom with a key and value using ```swap!``` (pronounced swap-bang)
 (swap! app-state assoc :foo "bar")
