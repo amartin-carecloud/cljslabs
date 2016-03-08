@@ -1,16 +1,18 @@
-(ns fkngliars1.core
+(ns houseofliars.core
   (:require [reagent.core :as reagent :refer [atom]]
             [cljsjs.jquery]
-            [fkngliars1.state :as state :refer [app-state]]
-            [fkngliars1.components.main :refer [main]]))
+            [houseofliars.state :as state :refer [app-state]]
+            [houseofliars.components.main :refer [main]]))
 
 (enable-console-print!)
 
 
 (state/initialize-app-state!)
 
-(reagent/render-component [main]
-                          (. js/document (getElementById "app")))
+;; "Main React Component. App initializes here"
+(reagent/render-component
+ [main]
+ (. js/document (getElementById "app")))
 
 (defn on-js-reload []
   ;; optionally touch your app-state to force rerendering depending on

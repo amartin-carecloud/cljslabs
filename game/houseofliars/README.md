@@ -1,10 +1,4 @@
-# fkngliars1
-
-## TASKS
-
-1. Include the bootstrap css and animate css files by including the CDN links in the head of the index.html
-
-
+# houseofliars
 
 FIXME: Write a one-line description of your library/project.
 

@@ -1,14 +1,13 @@
-(ns fkngliars1.components.main
-  (:require-macros [cljs.core.async.macros :refer [go]])
+(ns houseofliars.components.main
   (:require
    [reagent.core :as reagent]
-   [cljs.core.async :as async :refer [timeout chan <!]]
-   [fkngliars1.state :as state :refer [app-state]]
-   [fkngliars1.components.message :as message]
-   [fkngliars1.components.candidates :as candidates]
+   [houseofliars.state :as state :refer [app-state]]
+   [houseofliars.components.message :as message]
+   [houseofliars.components.candidates :as candidates]
    ))
 
 (defn game-title
+  "Renders the game title component. Uses the :game-title key in app-state."
   []
   [:div.row
    [:h1#gameTitle (:game-title @app-state)]])
