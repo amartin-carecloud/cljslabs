@@ -9,21 +9,21 @@ This is the first in a series of ClojureScript exercises. The goal of this exerc
 
 ## Tasks
 
-### Add jQuery and Bootstrap to project.clj from using CLJSJS.
+### 1. Add jQuery and Bootstrap to project.clj from using CLJSJS.
 
 Use [CLJSJS](http://cljsjs.github.io/) to add our javascript dependencies to our project.clj file.
 
-### Require jQuery in Core component
+### 2. Require jQuery in Core component
 
 In order for us to reference the almighty jQuery bling ($) within our application we must require it in our project. Think RequireJS. Use this [ClJSJS documentation](https://github.com/cljsjs/packages/wiki/Using-Packages) as a guide.
 
-### Add the animated css file from a CDN to the index.html file.
+### 3. Add the animated css file from a CDN to the index.html file.
 
 It's common to reqiure more than one stylesheet for our applications. Adding another stylesheet, aside from the default ```/css/style.css``` that is automatically generated for you, is fairly straight forward.
 
 * Add the animated.css stylesheet to our ```index.html``` file.
 
-### Add key to initial app-state
+### 4. Add key to initial app-state
 
 Our application state is held in a reactive [atom](http://clojuredocs.org/clojure.core/atom) which in essentially a map that we are able to mutate atomically using the ```swap!``` fn. Reagent, our thin wrapper our ReactJS, "reacts" to changes in our app-state and re-renders the components which depend on the data from the app-state.
 
@@ -88,7 +88,7 @@ Atoms can hold any value, but for the purpose of our application Atom's are muta
 * Add :game-title key to our app-state and provide a clever title for your game.
 
 
-### Create a game title component and populate it with a value from the app-state.
+### 5. Create a game title component and populate it with a value from the app-state.
 
 Our application uses a library called Hiccup which allows us represent HTML in Clojure. We write our HTML using the easy to use Hiccip syntax and our application compiles it to HTML.
 
