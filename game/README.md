@@ -72,9 +72,11 @@ Access values from our map
 ### let
 ```
 ;; We use let bindings in order to create lexically scoped variables inside our function body
-(let [some-var-name    (some-cool-function)
-      someBooleanValue? (if (< 0 (count some-vector)))]
-     (some-other-function someBooleanValue? some-var-name))
+(defn my-awesome-function
+ [some-vector]
+    (let [some-var-name    (some-cool-function)
+          someBooleanValue? (if (< 0 (count some-vector)))]
+        (some-other-function someBooleanValue? some-var-name)))
 ```
 
 ## Conditionals
