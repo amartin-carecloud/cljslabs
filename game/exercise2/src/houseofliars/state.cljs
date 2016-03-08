@@ -1,6 +1,5 @@
 (ns houseofliars.state
-  (:require [reagent.core :as reagent :refer [atom]]
-            [houseofliars.api :as api]))
+  (:require [reagent.core :as reagent :refer [atom]]))
 
 (def initial-app-state {:candidates [] ;; Populate me
                         :quotes [] ;; Populate me
