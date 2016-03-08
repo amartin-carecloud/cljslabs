@@ -1,7 +1,7 @@
 # House Of Liars
 
 Game written in ClojureScript with Reagent. Created for the Intro To ClojureScript series, hosted by [Point Slope](https://pointslope.com/) for the [Miami Clojure MeetUp](http://www.meetup.com/Miami-Clojure-Meetup/) group.
-The intention is to build this application by completing a series of tasks. Each task highlights a features of the language and/or interoperability between ClojureScript and JavaScript. The code in this repository is the final working example application.
+The intention is to build this application by completing a series of tasks. Each task highlights a features of the language and/or interoperability between ClojureScript and JavaScript.
 
 ## Exercise 2
 
@@ -48,7 +48,9 @@ _Working File: src/houseofliars/components/candidates.cljs_
 
 * __Get our candidate collection from our app-state, loop through the collection and pass each candidate map to our candidate component function.__
 
-*HINT*  You will need to use a Clojure function that allows you to iterate over a collection. It's common among all languages.
+**HINT**
+
+You will need to use a Clojure function that allows you to iterate over a collection. It's common among all languages.
 
 
 ### 3. Create our Quote Component
@@ -60,20 +62,26 @@ _Working File: src/houseofliars/components/message.cljs_
 * __The Quote component is going to render either our candidate quote OR a final assesment message. So our Quote component function must somehow get either determine that we've reached our max questions limit OR get the next quote in our quote collection.__
 
 
-*HINT* You can build this component function using the following Clojure functions:
+**HINT**
+
+You can build this component function using the following Clojure functions:
 * let
 * if-not
 * when
 * <
 
-*HINT* Our conditional must call either of these component functions in order to render a message
+**HINT**
+
+Our conditional must call either of the component functions below in order to render a message
 
 ```
 [candidate-quote-component quote] ;; Notice this compontent fn takes one argument - a quote map
 [game-over-component]
 ```
 
-*HINT* In order to get the next quote call this utils function
+**HINT**
+
+In order to get the next quote call this utils function
 
 ```
 (utils/select-random-quote)
