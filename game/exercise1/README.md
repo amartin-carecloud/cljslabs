@@ -48,14 +48,14 @@ The syntax for Clojure maps is fairly straight forward.
 
 Access values from our map
 ```
-(def mapp {:foo "bar" :fizz "buzz"})
+(def my-map {:foo "bar" :fizz "buzz"})
 
 ;; We can use the keyword from our map to look up the value
-(:foo mapp)
+(:foo my-map)
 => "bar"
 
 ;; The converse works as well
-(mapp :foo)
+(my-map :foo)
 => "bar"
 
 (def nested-map {:foo "bar" :fizz {:buzz "flam"}})
