@@ -1,10 +1,11 @@
-# houseofliars
+# House Of Liars
 
-FIXME: Write a one-line description of your library/project.
+Game written in ClojureScript with Reagent. Created for the Intro To ClojureScript series, hosted by Point Slope for the Clojure Miami MeetUp group.
+The intention is to build this application by completing a series of tasks. Each task highlights a features of the language and/or interoperability between ClojureScript and JavaScript. The code in this repository is the final working example application. 
 
 ## Overview
 
-FIXME: Write a paragraph about the library/project and highlight its goals.
+This game allows you to test your political lie detecting mettle. You must read the quote in the message box and guess which of the candidates lied to your face. These are highly trained, professional liars. Do you have what it takes? Good Luck! 
 
 ## Setup
 
