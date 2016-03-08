@@ -1,7 +1,0 @@
-* cljslabs
-
-A series of labs for the Miami Clojure Meetup's Intro to ClojureScript
-series.
-
-
-
