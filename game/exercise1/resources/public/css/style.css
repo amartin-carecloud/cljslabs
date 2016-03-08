@@ -3,6 +3,7 @@ html {
 }
 
 body {
+  color:white;
   background-color: #000141;
   font-family: "League-Gothic", Courier;
   background: -moz-radial-gradient(center, ellipse cover, #2657c9 0%, #000141 100%); /* ff3.6+ */
