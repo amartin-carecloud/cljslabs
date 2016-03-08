@@ -13,7 +13,7 @@ This is the first in a series of ClojureScript exercises. The goal of this exerc
 
 Use [CLJSJS](http://cljsjs.github.io/) to add our javascript dependencies to our project.clj file.
 
-### 2. Require jQuery in Core
+### 2. Require jQuery in Core.cljs
 
 _Working File: src/houseofliars/core.cljs_
 
@@ -25,69 +25,13 @@ _Working File: resources/public/index.html_
 
 It's common to reqiure more than one stylesheet for our applications. Adding another stylesheet, aside from the default ```/css/style.css``` that is automatically generated for you, is fairly straight forward.
 
-* Add the animated.css stylesheet to our ```index.html``` file.
+* Search for any CDN that is hosting animated.css and add the stylesheet URL to our ```index.html``` file.
 
 ### 4. Add key to initial app-state
 
 Our application state is held in a reactive [atom](http://clojuredocs.org/clojure.core/atom) which in essentially a map that we are able to mutate atomically using the ```swap!``` fn. Reagent, our thin wrapper our ReactJS, "reacts" to changes in our app-state and re-renders the components which depend on the data from the app-state.
 
 The *app-state* for this application is created in our ```state.cljs``` file.
-
-#### Clojure maps
-
-The syntax for Clojure maps is fairly straight forward.
-```
-{:keyword "value"}
-
-;; Notice: Clojure map values can by anything; keywords, strings, numbers, and collections
-{:foo "bar" :flim :flam}
-
-;; Notice: Clojure map keys can be keywords, string, numbers, and even other collections
-{1 "one" 2 "two"}
-```
-
-Access values from our map
-```
-(def my-map {:foo "bar" :fizz "buzz"})
-
-;; We can use the keyword from our map to look up the value
-(:foo my-map)
-=> "bar"
-
-;; The converse works as well
-(my-map :foo)
-=> "bar"
-
-(def nested-map {:foo "bar" :fizz {:buzz "flam"}})
-
-;; Here we use 'get-in' and pass it our map and the a vector of nested keys which will return our value.
-(get-in nested-map [:fizz :buzz])
-=> "flam"
-```
-
-#### Working With Atoms
-
-Atoms can hold any value, but for the purpose of our application Atom's are mutable maps.
-
-```
-;; Here we created an atom that points to an empty map.
-(def app-state (atom {}))
-(def app-state (atom {:foo ""}))
-
-;; Now we can populate (mutate) our Atom with a key and value using ```swap!``` (pronounced swap-bang)
-(swap! app-state assoc :foo "bar")
-
-;; Because our Atom is a map, we can treat it like a Clojure map. However, notice the *@* symbol prepended on our Atom var name. The *@* symbol is a macro that allows us to dereference our Atom and whatever the value is of the atom at that exact execution time.
-(:foo @app-state)
-=> "bar"
-
-;; Lets add a nested map to our atom
-(swap! app-state assoc-in [:foo :fizz :buzz] "flam")
-
-;; Printing the app-state will return the nested map
-(println @app-state)
-=> {:foo "bar" :fizz {:buzz "flam"}}
-```
 
 * Add :game-title key to our app-state and provide a clever title for your game.
 
