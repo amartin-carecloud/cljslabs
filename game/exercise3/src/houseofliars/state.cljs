@@ -27,7 +27,7 @@
   "Handler fn passed to ajax call. Adds the candidates to the app-state"
   [data]
 
-  ;; Uncomment below and fix
+  ;; Uncomment below and add your code
   ;;(swap! app-state assoc-in [:candidates] data )
   )
 
@@ -35,7 +35,7 @@
   "Handler fn passed to ajax call. Shuffles the quotes and adds them to the app-state"
   [data]
 
-  ;;Uncomment below and fix
+  ;;Uncomment below and add your code
   ;;(swap! app-state assoc-in [:quotes] data))
   )
 
